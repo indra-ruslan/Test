@@ -1,1 +1,100 @@
-12345
+
+indra ruslan@DESKTOP-SFQ83AD MINGW64 ~
+$ cd
+
+indra ruslan@DESKTOP-SFQ83AD MINGW64 ~
+$ cd /c
+
+indra ruslan@DESKTOP-SFQ83AD MINGW64 /c
+$ ls
+'$GetCurrent'/              pagefile.sys            swapfile.sys
+'$Recycle.Bin'/             PerfLogs/              'System Volume Information'/
+'Documents and Settings'@  'Program Files'/         Users/
+ GIT-TEST/                 'Program Files (x86)'/   Windows/
+ hiberfil.sys               ProgramData/            Windows.old/
+ Intel/                     Recovery/               Windows10Upgrade/
+
+indra ruslan@DESKTOP-SFQ83AD MINGW64 /c
+$ cd GIT-TEST/
+
+indra ruslan@DESKTOP-SFQ83AD MINGW64 /c/GIT-TEST
+$ ls
+
+indra ruslan@DESKTOP-SFQ83AD MINGW64 /c/GIT-TEST
+$ git config --global user.name "indra-ruslan"
+
+indra ruslan@DESKTOP-SFQ83AD MINGW64 /c/GIT-TEST
+$ git config --global user.email indra.ruslan@hotmail.com
+
+indra ruslan@DESKTOP-SFQ83AD MINGW64 /c/GIT-TEST
+$ git clone https://github.com/indra-ruslan/Test.git
+Cloning into 'Test'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+indra ruslan@DESKTOP-SFQ83AD MINGW64 /c/GIT-TEST
+$ ls
+Test/
+
+indra ruslan@DESKTOP-SFQ83AD MINGW64 /c/GIT-TEST
+$ cd test
+
+indra ruslan@DESKTOP-SFQ83AD MINGW64 /c/GIT-TEST/test (master)
+$ ls
+README.md
+
+indra ruslan@DESKTOP-SFQ83AD MINGW64 /c/GIT-TEST/test (master)
+$ ls
+README.md  Test-doc.txt
+
+indra ruslan@DESKTOP-SFQ83AD MINGW64 /c/GIT-TEST/test (master)
+$ git add Test-doc.txt
+
+indra ruslan@DESKTOP-SFQ83AD MINGW64 /c/GIT-TEST/test (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Test-doc.txt
+
+
+indra ruslan@DESKTOP-SFQ83AD MINGW64 /c/GIT-TEST/test (master)
+$ git commit -m "First Commit" Test-doc.txt
+[master bfe0b25] First Commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Test-doc.txt
+
+indra ruslan@DESKTOP-SFQ83AD MINGW64 /c/GIT-TEST/test (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/indra-ruslan/Test.git/'
+
+indra ruslan@DESKTOP-SFQ83AD MINGW64 /c/GIT-TEST/test (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/indra-ruslan/Test.git/'
+
+indra ruslan@DESKTOP-SFQ83AD MINGW64 /c/GIT-TEST/test (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 284 bytes | 94.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/indra-ruslan/Test.git
+   2bf2560..bfe0b25  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+indra ruslan@DESKTOP-SFQ83AD MINGW64 /c/GIT-TEST/test (master)
+$ ^C
+
+indra ruslan@DESKTOP-SFQ83AD MINGW64 /c/GIT-TEST/test (master)
+$
